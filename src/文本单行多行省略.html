@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单行多行省略</title>
+
+    <style>
+        .line-one {
+            width: 100px;
+
+            /* 超出隐藏 */
+            overflow: hidden; 
+            /* 文本超出显示... */
+            text-overflow: ellipsis;
+            /* 强制不换行 */
+            white-space: nowrap;
+        }
+        .line-two {
+            width: 100px;
+
+            /* 超出隐藏 */
+            overflow: hidden; 
+            /* 文本超出显示... */
+            text-overflow: ellipsis;
+
+            text-overflow: -o-ellipsis-lastline;
+            display: -webkit-box;
+            /* 显示两行 */
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .line-three {
+            width: 100px;
+
+            /* 超出隐藏 */
+            overflow: hidden; 
+            /* 文本超出显示... */
+            text-overflow: ellipsis;
+
+            text-overflow: -o-ellipsis-lastline;
+            display: -webkit-box;
+            /* 显示两行 */
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            /* 纯英文，数字也可换行 */
+            /* word-wrap: break-word; */
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <p class="line-one">收到货法律上的记录附件收到了史蒂芬霍金拉萨的交话费连时间代理费史蒂芬霍金了圣诞节福利水电费是登陆解放路束带结发收到了附件看来是大家弗兰克结算单福建省的</p>
+    <p class="line-two">收到货法律上的记录附件收到了史蒂芬霍金拉萨的交话费连时间代理费史蒂芬霍金了圣诞节福利水电费是登陆解放路束带结发收到了附件看来是大家弗兰克结算单福建省的</p>
+    <p class="line-three">flsdlflsdjhflsjdlfjsldjflsdjflhsdlghlsdjgcxn,v,.nxcvn.xnc.gvlewryoweurosjdjfnvlsdnvl</p>
+</body>
+</html>
